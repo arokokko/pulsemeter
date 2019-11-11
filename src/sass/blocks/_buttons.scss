@@ -1,0 +1,16 @@
+.button {
+    border-radius: 5px;
+    background-color: $main-color;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all .3s;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: #ffffff;
+        color: $main-color;
+    }
+}
