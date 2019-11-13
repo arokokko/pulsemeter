@@ -1,0 +1,26 @@
+.consultation {
+    padding: 100px 0 92px;
+    background: url(../images/bg-middle.png) center center/cover no-repeat;
+    &__subheader {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: left;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__descr {
+        margin-top: 75px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+        color: #ffffff;
+    }
+    &_form {
+        margin-top: 36px;
+    }
+    &_btn {
+        height: 55px;
+    }
+}

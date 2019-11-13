@@ -1,5 +1,5 @@
-@media (max-width: 970px) {
-    .promo {
+@media (max-width: 999px) {
+    .promo, .consultation {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -20,6 +20,17 @@
         }
         &__item:last-child {
             margin-top: 30px;
+        }
+    }
+    .consultation {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        &__subheader {
+            font-size: 24px;
+        }
+        &__descr {
+            font-size: 18px;
+            margin-top: 52px;
         }
     }
 }
@@ -100,7 +111,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .promo {
         &_btn {
             margin: 50px auto 0;
@@ -111,5 +122,16 @@
         &__subheader {
             font-size: 23px;
         }
+    }
+    .consultation {
+        &__subheader {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .form__feed {
+        width: 260px;
     }
 }
