@@ -1,3 +1,16 @@
+@media(max-width: 1200px) {
+    .carousel-ts {
+        .container {
+            width: 80vw;
+        }
+        &__inner {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 @media (max-width: 999px) {
     .promo, .consultation {
         padding-left: 20px;
@@ -20,6 +33,7 @@
             right: 40%;
         }
     }
+
 }
 
 @media (max-width: 780px) {
@@ -48,6 +62,15 @@
         &__descr {
             font-size: 18px;
             margin-top: 52px;
+        }
+    }
+    .carousel-ts {
+        width: 100vw;
+        button.prev {
+            display: none;
+        }
+        .prev, .next {
+            display: none; 
         }
     }
     

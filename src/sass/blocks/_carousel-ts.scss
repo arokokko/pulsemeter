@@ -1,0 +1,39 @@
+.carousel-ts {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ffffff;
+        border: none;
+    }
+    .prev {
+        left: -66px;
+    }
+    .next {
+        right: -66px;
+    }
+    .tns-nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: none;
+        } 
+    }
+    .tns-nav-active {
+        background-color: $main-color;
+    }
+}
