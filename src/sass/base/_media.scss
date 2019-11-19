@@ -16,24 +16,6 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .carousel {
-        &__inner {
-            width: 80vw;
-            img {
-                width: 100%;
-            }
-        }
-        .slick-prev, .slick-next {
-            top: 110%;
-        }
-        .slick-prev {
-            left: 40%;
-        }
-        .slick-next {
-            right: 40%;
-        }
-    }
-
 }
 
 @media (max-width: 780px) {
@@ -107,9 +89,6 @@
         &__item:nth-child(2) {
             margin-top: 30px;
         }
-    }
-    .carousel {
-        padding: 50px 0;
     }
 }
 
