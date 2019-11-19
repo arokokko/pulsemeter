@@ -9,28 +9,8 @@
     max-width: 950px;
     margin: 0 auto;
 }
-.title { 
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1;
-    color: #0d0d0d;
-    text-align: center;
-}
-.subtitle {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    color: #0d0d0d;
-}
-.describe {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5em;
-    text-align: center;
-    color: #0d0d0d;
-}
 
+@import 'blocks/titles-descr';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -38,5 +18,7 @@
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel-ts';
+@import 'blocks/catalog';
+@import 'blocks/cards';
 @import 'base/media';
 

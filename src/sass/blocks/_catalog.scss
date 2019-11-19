@@ -1,0 +1,43 @@
+.catalog {
+    padding-bottom: 100px;
+    &__tabs {
+        margin-top: 69px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: solid 2px #d0d0d0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #6b6b6b;
+        // наклоняем табы вправо
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 2px 2px 20px $main-color;
+            border: transparent;
+        }
+        div {
+            // выравниваем текст в табах прямо
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #ffffff;
+            background-color: $main-color;
+            border: transparent;
+        }
+    }
+    &__card {
+        margin-top: 59px;
+    }
+}
