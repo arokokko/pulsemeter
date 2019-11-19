@@ -29,7 +29,7 @@ const slider = tns({
 		320: {
 			nav: true
 		},
-		780: {
+		781: {
 			nav: false
 		}
 	}
