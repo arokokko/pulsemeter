@@ -37,7 +37,20 @@
             border: transparent;
         }
     }
-    &__card {
+    // отступ для блока с карточками
+    &__content {
         margin-top: 59px;
+        display: none;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
+    &__card {
+        margin-bottom: 20px;
+        &:nth-child(3n-1) {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
     }
 }

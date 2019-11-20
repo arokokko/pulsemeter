@@ -1,4 +1,5 @@
 .card {
+    overflow: hidden;
     width: 300px;
     min-height: 440px;
     border: solid 2px #e8e8e8;
@@ -60,5 +61,57 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__wrapper {
+        // calc вычисляет ширину по заданным параметрам
+        width: calc(200% + 40px);
+        display: flex;
+    }
+    &__content {
+        width: 50%;
+        margin-right: 0px;
+        transform: translateX(-100%);
+        transition: .5s all;
+        &_active {
+            transform: translateX(0%);
+            margin-right: 20px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        margin-left: 20px;
+        transform: translateX(0%);
+        padding-right: 20px;
+        transition: .5s all;
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0px;
+        }
+    }
+    &__back {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 19px;
+        li {
+            position: relative;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.5;
+            text-align: left;
+            color: #555555;
+            margin-bottom: 20px;
+            &:before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: $main-color;
+                position: absolute;
+                left: -14px;
+                top: 7px;
+            }
+        }
     }
 }
