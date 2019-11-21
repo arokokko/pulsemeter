@@ -49,6 +49,30 @@ $(document).ready(function(){
 	toggleSlide('.card__more');
 	toggleSlide('.card__goback');
 
+	// Modal windows
+
+	$('[data-modal=consultation]').on('click', function(){
+		$('.overlay, #consultation').fadeIn('slow');
+	});
+	
+	$('.card_btn').each(function(i) {
+		$(this).on('click', function() {
+			$('#order .modal__descr').text($('.card__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
+		});
+	});
+
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #order, #thanks').fadeOut();
+	});
+
+	// закрытие модального окна щелчком по пустому полю
+	$(window).on('click', function(e) {
+        if (e.target.classList.contains('overlay')) {
+            $('.overlay, #consultation, #thanks, #order').fadeOut();
+        }
+    });
+
 });
 
 
