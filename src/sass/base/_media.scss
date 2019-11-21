@@ -26,6 +26,14 @@
             margin: 0 20px 20px 20px;
         }
     }
+    .footer {
+        height: 470px;
+        &__contacts {
+            padding: 30px 0 30px;
+            height: 220px;
+            width: 400px;
+        }
+    }
 }
 
 @media (max-width: 780px) {
@@ -75,6 +83,16 @@
         &:hover {
             box-shadow: none;
             transform: none;
+        }
+    }
+    .footer {
+        &__map{
+            iframe {
+                height: 70vw;
+            }
+        }
+        &__contacts {
+            top: 70vw;
         }
     }
     
@@ -177,6 +195,14 @@
         padding-bottom: 50px;
         &__subheader {
             font-size: 23px;
+        }
+    }
+    .footer {
+        &__contacts {
+            width: 100%;
+        }
+        &__addr, &__phone {
+            font-size: 16px;
         }
     }
 }
