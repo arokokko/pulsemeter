@@ -155,6 +155,20 @@
             margin-top: 12px;
         }
     }
+    .form {
+        &__feed {
+            width: 100%;
+        }
+    }
+    .modal {
+        width: 72vw;
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 460px) {
@@ -205,6 +219,25 @@
             font-size: 16px;
         }
     }
+    .modal {
+        padding: 30px 15px 30px 15px;
+        min-height: 330px;
+        &_btn {
+            height: 40px;
+            font-size: 13px;
+        }
+        &__close {
+            right: -30px;
+            font-size: 30px;
+        }
+    }
+    
+    .form__feed {
+        input {
+            height: 40px;
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 360px) {
@@ -228,6 +261,6 @@
         }
     }
     .form__feed {
-        width: 260px;
+        width: 100%;
     }
 }
