@@ -97,6 +97,9 @@ $(document).ready(function(){
 	valideForms('#consultation-form');
 	valideForms('#consultation form');
 	valideForms('#order form');
+
+	// маска ввода номера телефона
+	$("input[name=phone]").mask("+9(999) 999-9999");
 });
 
 
