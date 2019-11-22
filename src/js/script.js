@@ -71,8 +71,32 @@ $(document).ready(function(){
         if (e.target.classList.contains('overlay')) {
             $('.overlay, #consultation, #thanks, #order').fadeOut();
         }
-    });
-
+	});
+	
+	//validate
+	function valideForms(form) {
+		$(form).validate({
+			rules: {                
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Пожалуйста введите ваше имя",
+				phone: "Пожалуйста введите ваш номер телефона",
+				email: {
+					required: "Пожалуйста введите ваш email",
+					email: "Email должен быть в формате name@domain.com"
+				}
+			}
+		});
+	}
+	valideForms('#consultation-form');
+	valideForms('#consultation form');
+	valideForms('#order form');
 });
 
 

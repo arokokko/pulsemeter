@@ -20,4 +20,13 @@
     &_form {
         margin-top: 36px;
     }
+    .error {
+        border: 2px solid $main-color;
+    }
+    label.error {
+        border: none;
+        margin-bottom: 15px;
+        margin-top: -10px;
+        color: #ffffff;
+    }
 }
