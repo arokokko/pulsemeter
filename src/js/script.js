@@ -100,6 +100,22 @@ $(document).ready(function(){
 
 	// маска ввода номера телефона
 	$("input[name=phone]").mask("+9(999) 999-9999");
+
+	// отправка писем
+	$('form').submit(function(e) {               /* обращаемся ко всем form */
+		e.preventDefault();                      /* убираем стандартные действия браузера - перезагрузку */
+		$.ajax({                                   /* обращаемся к ajax в jqery */
+			type: 'POST',                         /* говорим что будем отправлять данные на сервер */
+			url: 'mailer/smart.php',               /*  говорим куда будем отправлять */
+			data: $(this).serialize()             /* указываем какие данные отправляем и обрабатываем их для сервера */
+		}).done(function() {
+			$(this).find("input").val("");     /* value всех input устанавливаем в пустую строку */
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+			$('form').trigger('reset');        /* перезагружаем все form */
+		});
+		return false;
+	});
 });
 
 
