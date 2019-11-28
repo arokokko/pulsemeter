@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fonts_icomoon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -48,7 +49,7 @@
                 <button data-modal="consultation" class="button promo_btn">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#catal">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
 
@@ -67,7 +68,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart-icon.png" alt="heart" class="advantages__icon">
+                    <img src="icons/heart-icon.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <h3 class="subtitle advantages__title">Заботимся о здоровье</h3>
                     <div class="describe advantages__descr">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -104,7 +105,7 @@
         </div>
     </section>
 
-    <section class="carousel-ts">
+    <div class="carousel-ts">
         <div class="container">
             <div class="carousel-ts__inner">
                 <div>
@@ -117,12 +118,12 @@
                     <img src="images/carousel-3.png" alt="pulsemeter">
                 </div>
             </div>
-            <button type="button" class="prev"><img src="icons/prev-arrow.png"></button>
-            <button type="button" class="next"><img src="icons/next-arrow.png"></button>
+            <button type="button" class="prev"><img src="icons/prev-arrow.png" alt="arrow"></button>
+            <button type="button" class="next"><img src="icons/next-arrow.png" alt="arrow"></button>
         </div>
-    </section>
+    </div>
 
-    <section class="catalog">
+    <section id="catal" class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -430,7 +431,7 @@
         <div class="container">
             <h2 class="title feedback__title">отзывы клиентов</h2>
             <div class="feedback__wrapper">
-                <div class="feedback__inner">
+                <div class="feedback__inner fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="images/feedback-top.png" alt="photo" class="feedback__img">
                     <div class="feedback__text">
                         <div class="feedback__name">Ирина Иванченко</div>
@@ -446,7 +447,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="feedback__inner">
+                <div class="feedback__inner fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="images/feedback-middle.png" alt="photo" class="feedback__img">
                     <div class="feedback__text">
                         <div class="feedback__name">Иван Сёмочкин</div>
@@ -460,7 +461,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="feedback__inner">
+                <div class="feedback__inner fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="images/feedback-bottom.png" alt="photo" class="feedback__img">
                     <div class="feedback__text">
                         <div class="feedback__name">Юлия Дашкина</div>
@@ -522,15 +523,16 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
-    <a href="#" class="pageup">
-        <img src="icons/circle-up.svg" alt="arrow_up">
+    <a href="#up" class="pageup">
+        <img src="icons/circle-up.svg" alt="arrow_up" title="Вверх">
     </a>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js "></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

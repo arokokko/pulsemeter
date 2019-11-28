@@ -116,6 +116,33 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	//появление и исчезание иконки для скрола страницы вверх
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1300) {
+			$('.pageup').fadeIn('slow');
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	//smooth scroll
+	$("a[href='#up']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top}, 1000);
+		return false;
+	});
+
+	
+	$('a[href="#catal"]').on('click', function(e){
+		e.preventDefault();
+		const __href = $(this).attr('href');
+		$('html,body').animate({ scrollTop: $(__href).offset().top - 50 }, 1000);
+	});
+	
+
+	//скрипт для анимаций
+	new WOW().init();
 });
 
 
