@@ -1,4 +1,4 @@
-Company for sale pulsemeters<br>
+Learning project - company for sale pulsemeters<br>
 HTML<br>
 CSS<br>
 SASS<br>
